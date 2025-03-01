@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/dialog">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ADD EXPENSES"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="@drawable/bg"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shapeedittext"
+        android:layout_marginTop="10dp"
+        android:id="@+id/category"
+        android:textStyle="bold"
+        android:paddingStart="15dp"
+        android:hint="CATEGORY"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shapeedittext"
+        android:layout_marginTop="10dp"
+        android:paddingStart="15dp"
+        android:textStyle="bold"
+        android:id="@+id/amount"
+        android:hint="AMOUNT"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shapeedittext"
+        android:layout_marginTop="10dp"
+        android:paddingStart="15dp"
+        android:textStyle="bold"
+        android:id="@+id/notes"
+        android:hint="NOTES"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shapeedittext"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:paddingStart="15dp"
+        android:id="@+id/date"
+        android:hint="DATE"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_menu_gallery"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageadd"
+        />
+    <Button
+        android:id="@+id/addexpensebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2D47EF"
+        android:text="ADD"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+</LinearLayout>
+</RelativeLayout>
